@@ -34,5 +34,12 @@ export const createGalleryElement = ({
            </li>
          </ul>
      </li>`;
+};
 
+export const createLoader = () => {
+  const loaderEl = document.createElement('p');
+  loaderEl.classList.add('loader');
+  loaderEl.innerHTML = 'Loading images, please wait...</p>';
+  loaderEl.style.textAlign = 'center';
+  return loaderEl;
 };
