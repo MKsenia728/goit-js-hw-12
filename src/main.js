@@ -48,7 +48,7 @@ const createGallery = e => {
         captionsData: 'alt',
         captionDelay: 250,
       });
-      simplelightbox.refresh();
+      // simplelightbox.refresh();
     })
     .catch(err => {
       iziToast.error({
