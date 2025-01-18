@@ -1,0 +1,45 @@
+.form {
+  padding-top: 36px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-input {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #808080;
+  padding-left: 16px;
+  margin-right: 8px;
+  outline: none;
+  transition: border-color 250ms linear;
+}
+
+.form-input:hover {
+  border-color: #000000;
+}
+.form-input:focus {
+  color: #2e2f42; 
+  border-color: #4E75FF;
+}
+
+.form-btn {
+  border-radius: 8px;
+padding: 8px 16px;
+width: 91px;
+height: 40px;
+background: #4e75ff;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+border-color: transparent;
+transition: background-color 250ms linear;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background: #6c8cff;
+}
