@@ -1,0 +1,11 @@
+.load-more-btn {
+  display: block;
+  margin: auto;
+  width: 125px;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
+}
