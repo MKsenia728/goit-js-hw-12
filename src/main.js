@@ -26,12 +26,16 @@ const onSimpleLightBox = () => {
 
 const onScroll = () => {
   const { height } = galleryItemEl.getBoundingClientRect();
-  window.scrollBy(0, height * 2);
+  window.scrollBy({
+    top: height * 2,
+    behavior: 'smooth',
+  });
 };
 
 const createGallery = async e => {
   e.preventDefault();
   btnLoadMore.classList.add('is-hidden');
+  btnLoadMore.removeEventListener('click', onLoadMore);
   pageNumber = 1;
   galleryList.insertAdjacentElement('afterend', loaderEl);
 
@@ -109,7 +113,7 @@ const onLoadMore = async () => {
 
       iziToast.show({
         ...iziToastCommonOptions,
-        message: `Sorry, there are no images matching your search query ${searchedThema}. Please try again!`,
+        message: `You have uploaded all images for your request ${searchedThema}`,
       });
     } else {
       btnLoadMore.classList.remove('is-hidden');
